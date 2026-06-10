@@ -108,12 +108,12 @@ var e = {
     648: e => {
         e.exports = function() {
             const e = [
-                "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/slider/sequence-1-1080.mp4",
-                "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/slider/sequence-2-1080.mp4",
-                "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/slider/sequence-3-1080.mp4",
-                "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/slider/sequence-4-1080.mp4",
-                "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/slider/sequence-5-1080.mp4",
-                "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/slider/sequence-6-1080.mp4"
+                "/media/1.mp4",
+                "/media/2.mp4",
+                "/media/3.mp4",
+                "/media/4.mp4",
+                "/media/5.mp4",
+                "/media/6.mp4"
             ];
             
             const t = document.querySelector(".slider_lottie_wrapper");
@@ -374,11 +374,11 @@ const n = "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences";
 const r = {
     home: {
         loop: {
-            mp4: "https://s3.amazonaws.com/webflow-prod-assets/68946a7f9dd4e558382abd0f/68f0ebe420e48fbeb83ce17d_Home-Loop.mp4",
+            mp4: "/media/banner-loop2.mp4",
             mov: `${n}/home/home-loop.mov`
         },
         intro: {
-            mp4: "https://s3.amazonaws.com/webflow-prod-assets/68946a7f9dd4e558382abd0f/68f0ebbc56ac877052407266_Home-Intro.mp4",
+            mp4: "/media/home-intro.mp4",
             mov: `${n}/home/home-intro.mov`
         }
     }

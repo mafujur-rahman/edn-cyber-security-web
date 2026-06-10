@@ -221,7 +221,7 @@ input[type="file"]:focus-visible {
 }
 
 a, .w-nav-link, .w-form-label {
-  color: inherit;
+  color: white !important;
   text-decoration: none;
   font-weight: inherit;
 }
