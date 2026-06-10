@@ -245,8 +245,8 @@ a, .w-nav-link, .w-form-label {
   background: conic-gradient(
     from 0 at 50% 50%,
     #06090A 100deg,
-    #00E5E5, 
-    #8FEA3D,
+    #00E5E5 130deg,
+    #8FEA3D 230deg,
     #06090A 260deg
   );
 }

@@ -5,10 +5,12 @@ import CustomersSection from '@/components/CustomersSection';
 import EventsSection from '@/components/EventsSection';
 import FAQSection from '@/components/FAQSection';
 import FeaturesSection from '@/components/FeaturesSection';
+import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import InvestorsSection from '@/components/InvestorsSection';
 import LanternSection from '@/components/LanternSection';
 import LoadScreen from '@/components/LoadScreen';
+import Navigation from '@/components/Navigation';
 import QuoteSection from '@/components/QuoteSection';
 import SliderSection from '@/components/SliderSection';
 import StatsSection from '@/components/StatsSection';
@@ -30,6 +32,7 @@ export default function Home() {
   return (
     <>
       <LoadScreen />
+      <Navigation />
       <HeroSection />
       <FeaturesSection />
       <SliderSection />

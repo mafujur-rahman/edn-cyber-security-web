@@ -40,7 +40,7 @@ export default function StatsSection() {
                         </div>
                         <div className="highlight_grid_row">
                             <div className="highlight_grid_title">
-                                <h2 h-reveal="">Why MokN?</h2>
+                                <h2 h-reveal="">Why EDN?</h2>
                                 <div className="grid_hor_line_gradient hide-mobile-landscape"></div>
                                 <div className="grid_hor_line_gradient bottom hide-mobile-landscape"></div>
                             </div>

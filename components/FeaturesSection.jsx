@@ -21,8 +21,8 @@ export default function FeaturesSection() {
                         <path id="scroll-path" d="M75.9813 0V429.095C77.5097 446.599 79.7002 471.868 93.3704 507.113C169.604 703.656 173.69 780.674 75.9813 1030.73C-26.6131 1293.29 -21.3403 1360.8 75.9813 1595.85C170.818 1824.91 172.668 1940.93 86.2012 2162.98C78.9349 2188.8 72.8987 2220.99 75.9813 2250" stroke="url(#paint0_linear_5489_14970)"></path>
                         <defs>
                             <linearGradient id="paint0_linear_5489_14970" x1="75.5" y1="0" x2="75.5" y2="2250" gradientUnits="userSpaceOnUse">
-                                <stop stopColor="#FF0137" stopOpacity="0"></stop>
-                                <stop offset="0.187633" stopColor="#FF0137"></stop>
+                                <stop stopColor="#00E5E5" stopOpacity="0"></stop>
+                                <stop offset="0.187633" stopColor="#8FEA3D"></stop>
                             </linearGradient>
                         </defs>
                     </svg>
