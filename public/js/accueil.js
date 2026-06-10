@@ -108,7 +108,7 @@ var e = {
     648: e => {
         e.exports = function() {
             const e = [
-                "/media/1.mp4",
+                "/media/sequence-1.mp4",
                 "/media/2.mp4",
                 "/media/3.mp4",
                 "/media/4.mp4",
@@ -371,15 +371,26 @@ const o = {
 
 const n = "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences";
 
+// ADD THIS: Helper function to add cache-busting query parameter
+const addCacheBuster = (url) => {
+    // Only add cache-buster in development or when needed
+    if (process.env.NODE_ENV === 'development') {
+        const separator = url.includes('?') ? '&' : '?';
+        return `${url}${separator}v=${Date.now()}`;
+    }
+    return url;
+};
+
+// UPDATE THIS: Replace with your new video URLs
 const r = {
     home: {
         loop: {
             mp4: "/media/banner-loop2.mp4",
-            mov: `${n}/home/home-loop.mov`
+            mov: "/media/banner-loop2.mov"
         },
         intro: {
-            mp4: "/media/home-intro.mp4",
-            mov: `${n}/home/home-intro.mov`
+            mp4: "/media/banner-intro.mp4",
+            mov: "/media/banner-intro.mov"
         }
     }
 };
@@ -405,12 +416,37 @@ function p(e) {
     t.playsInline = !0;
     Object.assign(t, e.attributes);
     
+    // Clear any existing sources
+    while (t.firstChild) {
+        t.removeChild(t.firstChild);
+    }
+    
     const s = document.createElement("source");
     s.src = e.sources.mp4;
     s.type = "video/mp4";
     t.appendChild(s);
     
+    // Add error handling to log video URL
+    t.addEventListener('error', (error) => {
+        console.error(`Video failed to load: ${e.sources.mp4}`, error);
+    });
+    
     return t;
+}
+
+/* ============================================ */
+/* FUNCTION TO CLEAN UP EXISTING VIDEOS         */
+/* ============================================ */
+
+function cleanupExistingVideos(wrapper) {
+    if (!wrapper) return;
+    const existingVideos = wrapper.querySelectorAll('video');
+    existingVideos.forEach(video => {
+        video.pause();
+        video.removeAttribute('src');
+        video.load();
+        video.remove();
+    });
 }
 
 /* ============================================ */
@@ -430,48 +466,27 @@ return function(e) {
         return void console.warn(`${r} wrapper not found`);
     }
     
-    const i = !sessionStorage.getItem("mokn_has_visited") && (sessionStorage.setItem("mokn_has_visited", "true"), !0);
+    // Clean up existing videos first
+    cleanupExistingVideos(t);
+    
+    // FORCE ALWAYS SHOW VIDEO - IGNORE FIRST VISIT CHECK
     const a = p({
         sources: s.loop,
         className: o,
-        attributes: { loop: !0 }
+        attributes: { autoplay: !0, loop: !0 }  // Auto-play and loop
     });
     
-    if(i) {
-        const e = p({
-            sources: s.intro,
-            className: o,
-            attributes: { autoplay: !0 }
-        });
-        
-        if(n) {
-            e.addEventListener("play", () => n(!0));
-        }
-        
-        e.addEventListener("ended", () => {
-            e.classList.add("hide");
-            a.play().catch(e => {
-                console.error(`Failed to play ${r.toLowerCase()} loop video:`, e);
-            });
-        });
-        
-        e.addEventListener("error", e => {
-            console.error(`${r} intro video loading error:`, e);
-        });
-        
-        t.appendChild(a);
-        t.appendChild(e);
-    } else {
-        a.autoplay = !0;
-        if(n) {
-            setTimeout(() => n(!1), 100);
-        }
-        t.appendChild(a);
-    }
+    t.appendChild(a);
     
     a.addEventListener("error", e => {
-        console.error(`${r} loop video loading error:`, e);
+        console.error(`${r} video loading error:`, e);
+        console.error(`Failed URL: ${s.loop?.mp4}`);
     });
+    
+    // Trigger animations immediately
+    if(n) {
+        n(!1);
+    }
 }({
     wrapper: i,
     videoSources: r.home,
@@ -503,7 +518,9 @@ return function(e) {
             if(c) {
                 c.style.opacity = 1;
             }
-            d.style.display = "none";
+            if(d && d.style) {
+                d.style.display = "none";
+            }
         }, t.CONTENT_DELAY);
     },
     logPrefix: "Hero"

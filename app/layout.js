@@ -92,17 +92,12 @@ export default function RootLayout({ children }) {
                                       // 9. Custom scripts
                                       loadScript('/js/global.js', false, false, function() {
                                         loadScript('/js/accueil.js', false, false, function() {
-                                          // 10. Dynamic scripts
-                                          executeInline(\`
-                                            var isPreview = location.href.includes("canvas");
-                                            var isDev = localStorage.getItem("devMode") === "true";
-                                            var globalScript = document.createElement("script");
-                                            globalScript.src = isDev || isPreview ? "http://localhost:3000/global.js" : "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/global.js";
-                                            document.head.appendChild(globalScript);
-                                            var script = document.createElement("script");
-                                            script.src = isDev || isPreview ? "http://localhost:3000/pages/accueil.js" : "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/pages/accueil.js";
-                                            document.head.appendChild(script);
-                                          \`);
+                                          // 10. IMPORTANT FIX: Load LOCAL accueil.js instead of CDN
+                                          // This ensures your local video changes are used
+                                          var localScript = document.createElement("script");
+                                          localScript.src = "/js/accueil.js";
+                                          document.head.appendChild(localScript);
+                                          
                                           // 11. Mobile animation removal
                                           executeInline('if (window.innerWidth <= 767) { var elements = document.querySelectorAll("[h-reveal], [p-reveal]"); for (var i = 0; i < elements.length; i++) { elements[i].removeAttribute("h-reveal"); elements[i].removeAttribute("p-reveal"); } }');
                                           // 12. External scripts
