@@ -8,9 +8,9 @@ export default function EventsSection() {
                             <div className="globe">
                                 <div className="globe_gradient"></div>
                                 <div data-poster-url="https://cdn.prod.website-files.com/68946a7f9dd4e558382abd0f%2F68dbb29767f35a7479d33519_Lottielab%20Map-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/68946a7f9dd4e558382abd0f%2F68dbb29767f35a7479d33519_Lottielab%20Map-transcode.mp4" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="fullsize blending-lighten w-background-video w-background-video-atom">
-                                    <video autoPlay loop style={{ backgroundImage: "url('https://cdn.prod.website-files.com/68946a7f9dd4e558382abd0f/68dbb29767f35a7479d33519_Lottielab%20Map-poster-00001.jpg')" }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                                        <source src="/media/68946a7f9dd4e558382abd0f%252F68dbb29767f35a7479d33519_Lottielab%20Map-transcode.mp4" data-wf-ignore="true" />
-                                        <source src="/media/68946a7f9dd4e558382abd0f%252F68dbb29767f35a7479d33519_Lottielab%20Map-transcode.webm" data-wf-ignore="true" />
+                                    <video autoPlay loop  muted playsInline data-wf-ignore="true" data-object-fit="cover">
+                                        <source src="/media/Global.mp4" data-wf-ignore="true" />
+                                        <source src="/media/Global.mp4" data-wf-ignore="true" />
                                     </video>
                                 </div>
                             </div>

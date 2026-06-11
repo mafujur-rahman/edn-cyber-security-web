@@ -25,7 +25,6 @@ export default function LanternSection() {
                         </div>
                         <div className="lanter-wrapper">
                             <div lantern-wrapper="" className="section_lantern_box">
-                                <img src="/images/68952e1432ec4a0ac84b2d16_fbda059d238e442cca2c6f682522f144_Section_Lantern.webp" loading="lazy" sizes="100vw" srcSet="/images/68952e1432ec4a0ac84b2d16_fbda059d238e442cca2c6f682522f144_Section_Lantern-p-500.webp 500w, /images/68952e1432ec4a0ac84b2d16_fbda059d238e442cca2c6f682522f144_Section_Lantern-p-800.webp 800w, /images/68952e1432ec4a0ac84b2d16_fbda059d238e442cca2c6f682522f144_Section_Lantern-p-1080.webp 1080w, /images/68952e1432ec4a0ac84b2d16_fbda059d238e442cca2c6f682522f144_Section_Lantern.webp 1314w" alt="A single red lightbulb hangs in a dark space" className="fullsize" />
                             </div>
                             <div className="section_lantern_mask"></div>
                             <div className="section_lantern_mask left"></div>

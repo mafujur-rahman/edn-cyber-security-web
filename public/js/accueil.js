@@ -16,12 +16,12 @@ var e = {
         e.exports = function() {
             const e = {
                 loop: {
-                    mp4: "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/lantern/lantern-loop.mp4",
-                    mov: "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/lantern/lantern-loop.mov"
+                    mp4: "/media/banner-loop.mp4",
+                    mov: "/media/banner-loop.mov"
                 },
                 intro: {
-                    mp4: "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/lantern/lantern-intro.mp4",
-                    mov: "https://cdn.jsdelivr.net/gh/40-60/mokn/dist/img_sequences/lantern/lantern-intro.mov"
+                    mp4: "/media/banner-loop.mp4",
+                    mov: "/media/banner-loop.mov"
                 }
             };
             

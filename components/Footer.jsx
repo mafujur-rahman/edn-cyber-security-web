@@ -14,7 +14,7 @@ export default function Footer() {
                                         src="/images/logo.png" 
                                         loading="lazy" 
                                         sizes="100vw" 
-                                        srcSet="images/68953ae6dd69263dad027790_18fd806485877494cfa4675886a347f7_HD_Intro_00000-p-500.webp 500w, images/68953ae6dd69263dad027790_18fd806485877494cfa4675886a347f7_HD_Intro_00000.webp 529w" 
+                                        srcSet="/images/edn-3dIcon.png 500w, /images/edn-3dIcon.png 629w" 
                                         alt="Hexagon-patterned object" 
                                         className="fullsize"
                                     />

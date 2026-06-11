@@ -36,8 +36,8 @@ export default function FeaturesSection() {
                         {/* FEATURE 1 */}
                         <div className="home_feature_row">
                             <div className="feature_img">
-                                <div data-w-id="630b8a15-eb97-0b77-a5c7-26fb90f48381" data-is-ix2-target="1" className="fullsize" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/68946a7f9dd4e558382abd0f/68b83f8e48f9a4b6ff16372a_37674985c5168ecb24e056fea5b227fe_Card%20Solo%20%281%29.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager"></div>
-                                <img src="/images/68d483609341cb789c024ee5_static-lottie_1.webp" loading="lazy" sizes="100vw" srcSet="/images/68d483609341cb789c024ee5_static-lottie_1-p-500.webp 500w, /images/68d483609341cb789c024ee5_static-lottie_1-p-800.webp 800w, /images/68d483609341cb789c024ee5_static-lottie_1.webp 990w" alt="A password manager displays an encrypted password" className="img-contain show-mobile-landscape hide" />
+                                <div data-w-id="630b8a15-eb97-0b77-a5c7-26fb90f48381" data-is-ix2-target="1" className="fullsize" data-animation-type="lottie" data-src="card-feature-1.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager"></div>
+                                <img src="/images/lottie.png" loading="lazy" sizes="100vw" srcSet="/images/lottie.png 500w, /images/lottie.png 800w, /images/lottie.png 990w" alt="A password manager displays an encrypted password" className="img-contain show-mobile-landscape hide" />
                             </div>
                             <div home-feature-item="" className="padding-1">
                                 <div home-feature-light="" className="home_feature_light left"></div>
