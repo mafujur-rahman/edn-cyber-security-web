@@ -76,7 +76,7 @@ export default function FeaturesSection() {
                                 </div>
                             </div>
                             <div id="w-node-_3136ad01-719e-0ace-3c0f-9c18f9306c71-382abd0a" className="feature_img">
-                                <div data-w-id="0ce8de05-77b3-d675-63e7-27bbdd0b501e" data-is-ix2-target="1" className="fullsize" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/68946a7f9dd4e558382abd0f/68b83f8d19c71c65d7ba9ac7_73729929caf8aca0cee59d8d7b6561de_Card%20Stack%20Home%20%282%29.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager"></div>
+                                <div data-w-id="0ce8de05-77b3-d675-63e7-27bbdd0b501e" data-is-ix2-target="1" className="fullsize" data-animation-type="lottie" data-src="card-feature-2.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager"></div>
                                 <img src="/images/68d483602c0beae04467c281_static-lottie_2.webp" loading="lazy" sizes="100vw" srcSet="/images/68d483602c0beae04467c281_static-lottie_2-p-500.webp 500w, /images/68d483602c0beae04467c281_static-lottie_2-p-800.webp 800w, /images/68d483602c0beae04467c281_static-lottie_2.webp 990w" alt="Three stacked cards show password alerts" className="img-contain show-mobile-landscape hide" />
                             </div>
                         </div>
@@ -84,7 +84,7 @@ export default function FeaturesSection() {
                         {/* FEATURE 3 */}
                         <div className="home_feature_row">
                             <div className="feature_img">
-                                <div data-w-id="1f55fe3d-89e7-c04b-e66f-6f2928987539" data-is-ix2-target="1" className="fullsize" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/68946a7f9dd4e558382abd0f/68b83f8e6e2ef58c60c08fde_4e39dd8be4de9ae06e57fe6671f3fff3_Lottielab%20Chart%20Home%20Page.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager"></div>
+                                <div data-w-id="1f55fe3d-89e7-c04b-e66f-6f2928987539" data-is-ix2-target="1" className="fullsize" data-animation-type="lottie" data-src="card-feature-3.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="3" data-loading="eager"></div>
                                 <img src="/images/68d4836038c426e0158991b1_static-lottie_3.webp" loading="lazy" sizes="100vw" srcSet="/images/68d4836038c426e0158991b1_static-lottie_3-p-500.webp 500w, /images/68d4836038c426e0158991b1_static-lottie_3-p-800.webp 800w, /images/68d4836038c426e0158991b1_static-lottie_3.webp 990w" alt="Threat intelligence chart" className="img-contain show-mobile-landscape hide" />
                             </div>
                             <div home-feature-item="" className="padding-1">

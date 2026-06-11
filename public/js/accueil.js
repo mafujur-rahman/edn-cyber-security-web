@@ -387,10 +387,6 @@ const r = {
         loop: {
             mp4: "/media/banner-loop2.mp4",
             mov: "/media/banner-loop2.mov"
-        },
-        intro: {
-            mp4: "/media/banner-intro.mp4",
-            mov: "/media/banner-intro.mov"
         }
     }
 };
@@ -414,6 +410,8 @@ function p(e) {
     t.className = e.className || "home_hero_3d";
     t.muted = !0;
     t.playsInline = !0;
+    t.loop = !0;
+    t.autoplay = !0;
     Object.assign(t, e.attributes);
     
     // Clear any existing sources
@@ -469,11 +467,11 @@ return function(e) {
     // Clean up existing videos first
     cleanupExistingVideos(t);
     
-    // FORCE ALWAYS SHOW VIDEO - IGNORE FIRST VISIT CHECK
+    // Create and show only the loop video
     const a = p({
         sources: s.loop,
         className: o,
-        attributes: { autoplay: !0, loop: !0 }  // Auto-play and loop
+        attributes: { autoplay: !0, loop: !0 }
     });
     
     t.appendChild(a);
@@ -483,7 +481,12 @@ return function(e) {
         console.error(`Failed URL: ${s.loop?.mp4}`);
     });
     
-    // Trigger animations immediately
+    // Show wrapper immediately
+    if(t) {
+        t.style.opacity = 1;
+    }
+    
+    // Trigger UI animations immediately
     if(n) {
         n(!1);
     }
@@ -492,13 +495,8 @@ return function(e) {
     videoSources: r.home,
     className: "home_hero_3d",
     onIntroPlay: function(e = !0) {
-        console.log("Intro video started - triggering UI animations");
+        console.log("Loop video playing - triggering UI animations");
         const t = e ? o.FIRST_VISIT : o.RETURN_VISIT;
-        console.log(`Using ${e ? "first visit" : "return visit"} timings:`, t);
-        
-        if(i) {
-            i.style.opacity = 1;
-        }
         
         if(window.innerWidth > 991) {
             setTimeout(() => {
