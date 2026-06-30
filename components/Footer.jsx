@@ -87,15 +87,15 @@ export default function Footer() {
                                             <div className="margin-bottom margin-8">
                                                 <div className="heading-style-overline">Offers</div>
                                             </div>
-                                            <a href="/baits" className="text-link">Baits</a>
-                                            <a href="/lantern" className="text-link">Lantern</a>
+                                            <a href="/baits" className="footer-text-link">Baits</a>
+                                            <a href="/lantern" className="footer-text-link">Lantern</a>
                                         </div>
                                         <div className="vflex-left-top">
                                             <div className="margin-bottom margin-8">
                                                 <div className="heading-style-overline">Company</div>
                                             </div>
-                                            <a href="/about-us" className="text-link">About us</a>
-                                            <a href="/contact" className="text-link">Contact</a>
+                                            <a href="/about-us" className="footer-text-link">About us</a>
+                                            <a href="/contact" className="footer-text-link">Contact</a>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@ export default function Footer() {
                                 <div className="hflex-between-center z-index-1 gap-16">
                                     <div className="text-regular">© 2026 EDN Cyber Security. All rights reserved.</div>
                                     <div className="hflex-between-center">
-                                        <a href="/terms-of-service" className="text-link">Terms of service</a>
+                                        <a href="/terms-of-service" className="footer-text-link">Terms of service</a>
                                     </div>
                                 </div>
                             </div>
