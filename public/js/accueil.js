@@ -16,12 +16,12 @@ var e = {
         e.exports = function() {
             const e = {
                 loop: {
-                    mp4: "/media/banner-loop.mp4",
-                    mov: "/media/banner-loop.mov"
+                    mp4: "/media/logo-lantern.mp4",
+                    mov: "/media/logo-lantern.mov"
                 },
                 intro: {
-                    mp4: "/media/banner-loop.mp4",
-                    mov: "/media/banner-loop.mov"
+                    mp4: "/media/logo-lantern.mp4",
+                    mov: "/media/logo-lantern.mov"
                 }
             };
             
@@ -385,8 +385,8 @@ const addCacheBuster = (url) => {
 const r = {
     home: {
         loop: {
-            mp4: "/media/banner-loop2.mp4",
-            mov: "/media/banner-loop2.mov"
+            mp4: "/media/banner-video.mp4",
+            mov: "/media/banner-video.mov"
         }
     }
 };
